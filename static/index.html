@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+        <head>
+                <title>Level Up</title>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta keywords="Продукт для повышения потенции" />
+                <link href="/styles/global.css" rel="stylesheet" />
+
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
+                <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" type="text/css">
+        </head>
+        <body>
+                <div class="nav">
+                        <div class="top">
+                                <div class="item active" style="user-select: none; cursor: default;">
+                                        <span class="icon material-symbols-outlined">store</span>
+                                        <span class="title" style="background: linear-gradient(to left, var(--color-blue), transparent)">Level Up</span>
+                                </div>
+                        </div>
+                        <div class="bottom">
+                                <div goto="promo-heading" class="item">
+                                        <span class="icon material-symbols-outlined">home</span>
+                                        <span class="title">Главная</span>
+                                </div>
+                                <div goto="product-compose" class="item">
+                                        <span class="icon material-symbols-outlined">hub</span>
+                                        <span class="title">Состав</span>
+                                </div>
+                                <div goto="reviews" class="item">
+                                        <span class="icon material-symbols-outlined">thumb_up_off</span>
+                                        <span class="title">Отзывы</span>
+                                </div>
+                                <div goto="promo" class="item">
+                                        <span class="icon material-symbols-outlined">gallery_thumbnail</span>
+                                        <span class="title">Промо</span>
+                                </div>
+                                <div goto="purchase-form" class="item">
+                                        <span id="menu-timer" class="icon material-symbols-outlined">shopping_cart</span>
+                                        <span class="title">Покупка</span>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="landing">
+                        <div id="promo-heading" class="block">
+                                <video autoplay muted loop class="fullscreen background" style="object-fit: cover;">
+                                        <source src="/video/promo-back.mp4" type="video/mp4"/>
+                                </video>
+                                <div class="content-wrapper">
+                                        <section>
+                                                <div class="content center">
+                                                        <span>
+                                                                <div class="promo-title">
+                                                                        <h1><span>LevelUp</span></h1>
+                                                                </div>
+                                                                <div class="promo-description ">
+                                                                        <span class="promo-good-photo">
+                                                                                <img src="images/prod.png" alt="LevelUp" />
+                                                                        </span>
+                                                                        <span class="promo-good-description">
+                                                                                <div class="promo-heading-text">
+                                                                                        Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство, нанотехнологии формируют глобальную экономическую сеть и при этом — призваны к ответу
+                                                                                </div>
+                                                                                <div class="promo-heading-list-wrapper">
+                                                                                        <ul class="check-list">
+                                                                                                <li>Мы любим животных и стараемся</li>
+                                                                                                <li>Для современного мира глубокий уровень</li>
+                                                                                                <li>Картельные сговоры не допускают ситуации</li>
+                                                                                        </ul>
+                                                                                </div>
+                                                                                <hr/>
+                                                                                <button goto="purchase-form" class="purchase">
+                                                                                        Заказать сейчас
+                                                                                </button>
+                                                                        </span>
+                                                                </div>
+                                                        </span>
+                                                </div>
+                                        </section>
+                                </div>
+                        </div>
+
+                        <div id="product-compose" class="block">
+                                <div class="content-wrapper">
+                                        <section>
+                                                <div class="content">
+                                                        <div class="svg-container"></div>
+
+                                                        <div class="ingredient-column left">
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/1.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 1
+                                                                        </div>
+                                                                </div>
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/2.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 2
+                                                                        </div>
+                                                                </div>
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/3.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 3
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="compose-center-block">
+                                                                <img src="/images/prod.png" alr="LevelUp"/>
+                                                                <button goto="purchase-form" class="purchase">
+                                                                        Заказать
+                                                                </button>
+                                                        </div>
+
+                                                        <div class="ingredient-column right">
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/4.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 4
+                                                                        </div>
+                                                                </div>
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/5.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 5
+                                                                        </div>
+                                                                </div>
+                                                                <div class="ingredient" style="background-image: url('/images/ingredient/6.png')">
+                                                                        <div class="ingredient-title">
+                                                                                Ингредиент 6
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </section>
+                                </div>
+                        </div>
+
+                        <div id="reviews" class="block">
+                                <div class="content-wrapper">
+                                        <section>
+                                                <div class="content">
+                                                        <div class="header">
+                                                                <div class="title">
+                                                                        <h1>Отзывы</h1>
+                                                                </div>
+                                                        </div>
+                                                        <div class="carousel">
+                                                                <div class="carousel-inner">
+                                                                        <div class="review">
+                                                                                <div class="review-head">
+                                                                                        <div class="review-human">
+                                                                                                <img src="/images/reviews/1.png" alt="human" />
+                                                                                        </div>
+                                                                                        <div class="review-name">
+                                                                                                Курчевский Роман Александрович
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="review-body">
+                                                                                        В своём стремлении улучшить пользовательский опыт мы упускаем, что акционеры крупнейших компаний формируют глобальную экономическую сеть и при этом — описаны максимально подробно.
+                                                                                        <div class="stars">
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="review">
+                                                                                <div class="review-head">
+                                                                                        <div class="review-human">
+                                                                                                <img src="/images/reviews/2.png" alt="human" />
+                                                                                        </div>
+                                                                                        <div class="review-name">
+                                                                                                Красильник Леонид Сергеевич
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="review-body">
+                                                                                        Банальные, но неопровержимые выводы, а также действия представителей оппозиции неоднозначны и будут ассоциативно распределены по отраслям.
+                                                                                        <div class="stars">
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="review">
+                                                                                <div class="review-head">
+                                                                                        <div class="review-human">
+                                                                                                <img src="/images/reviews/3.png" alt="human" />
+                                                                                        </div>
+                                                                                        <div class="review-name">
+                                                                                                Падченко Сергей Владимирович
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="review-body">
+                                                                                        Как принято считать, предприниматели в сети интернет лишь добавляют фракционных разногласий и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+                                                                                        <div class="stars">
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <!-- <a class="carousel-prev" href="#"><-</a> -->
+                                                        <!-- <a class="carousel-next" href="#">-></a> -->
+                                                </div>
+                                        </section>
+                                </div>
+                        </div>
+
+                        <div id="promo" class="block">
+                                <div class="content-wrapper">
+                                        <section>
+                                                <div class="content center">
+                                                        <div class="promo-first-row">
+                                                                <div class="promo-human-image">
+                                                                        <img src="/images/doctor-edited.png" alt="Doctor" />
+                                                                        <button goto="purchase-form" class="purchase">Заказать</button>
+                                                                </div>
+                                                                <div class="promo-description">
+                                                                        <p>
+                                                                                Приятно, граждане, наблюдать, как действия представителей оппозиции представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть своевременно верифицированы.
+                                                                        </p>
+                                                                        <p>
+                                                                                Повседневная практика показывает, что новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции играет важную роль в формировании систем массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет оценить значение модели развития.
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="promo-chars" style="text-align: center">
+                                                                Отличный; Действует в 100% случаев; Классный
+                                                        </div>
+                                                </div>
+                                        </section>
+                                </div>
+                        </div>
+
+                        <div id="purchase-form" class="block">
+                                <div class="content-wrapper">
+                                        <section>
+                                                <div class="content">
+                                                        <div class="purchase-form-head">
+                                                                <div class="purchase-form-title">
+                                                                        <h1><span>Level Up</span></h1>
+                                                                </div>
+                                                                <div class="timer">
+                                                                        <span class="hours">00</span>
+                                                                        :
+                                                                        <span class="minutes">00</span>
+                                                                        :
+                                                                        <span class="seconds">00</span>
+                                                                        <span class="timer-title">Успей Купить!</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="purchase-form-body">
+                                                                <div class="purchase-form-product">
+                                                                        <div class="purchase-form-product-image">
+                                                                                <img src="/images/prod.png" alt="Level Up"/>
+                                                                        </div>
+                                                                        <div class="prices">
+                                                                                <div class="new-price">
+                                                                                        <span>Новая цена! </span><span>1234р</span>
+                                                                                </div>
+                                                                                <div class="old-price">
+                                                                                        <span>4321р</span>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="purchase-form">
+                                                                        <div class="purchase-form-form-wrapper">
+                                                                                <div class="purchase-form-title">Оформить Заказ</div>
+                                                                                <form>
+                                                                                        <span>Имя</span>
+                                                                                        <div class="relative">
+                                                                                                <input value="" type='text' placeholder="Иван Иванов Иванович"/>
+                                                                                                <label class="tip">Иван Иванов Иванович</label>
+                                                                                        </div>
+
+                                                                                        <span>Телефон</span>
+                                                                                        <div class="relative">
+                                                                                                <input class="number-only" value="" placeholder="+79997774422" type='text'/>
+                                                                                                <label class="tip">+79097540074</label>
+                                                                                        </div>
+                                                                                </form>
+                                                                                <button>Заказать</button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </section>
+                                </div>
+                        </div>
+                </div>
+
+                <script>
+                $('.carousel').jcarousel({wrap: 'circular', center: true})
+                        .jcarouselAutoscroll({
+                                interval: 3000,
+                                target: '+=1',
+                                autostart: true
+                        })
+                        .on('jcarousel:targetin', "div.review", function() {
+                                $(this).addClass('active');
+                        })
+                        .on('jcarousel:targetout', "div.review", function() {
+                                $(this).removeClass('active');
+                        })
+
+                // $('.carousel-prev').jcarouselControl({
+                //         target: '-=1'
+                // });
+                // $('.carousel-next').jcarouselControl({
+                //         target: '+=1'
+                // })
+                </script>
+                <script src="/bundle.js"></script>
+        </body>
+</html>
