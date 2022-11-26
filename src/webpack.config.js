@@ -23,7 +23,7 @@ module.exports = {
         },
 
         output: {
-                path: path.resolve(__dirname, "../static/"),
+                path: path.resolve(__dirname, "../"),
                 filename: 'bundle.js'
         },
         plugins: [
